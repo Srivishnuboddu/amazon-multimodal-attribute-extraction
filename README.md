@@ -6,8 +6,6 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-green)
 
 
----
-# 🛍️ Multimodal Product Attribute Extraction & Normalization
 
 ## 📌 Project Overview
 This project builds a multimodal deep learning pipeline to **extract and normalize product attributes** (brand, color, size, material, category) from both **product text (title + description)** and **images**.
