@@ -8,7 +8,7 @@
 *.h5
 
 # Ignore notebooks checkpoints
-.ipynb_checkpoints/
+# .ipynb_checkpoints/
 
 # Ignore environment files
 .env
