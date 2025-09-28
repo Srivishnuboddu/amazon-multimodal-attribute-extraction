@@ -1,6 +1,6 @@
 # Ignore data and large files
-data/*
-!data/.gitkeep
+# data/*
+# !data/.gitkeep
 
 # Ignore model checkpoints
 *.pth
