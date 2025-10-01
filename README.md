@@ -95,44 +95,6 @@ Build interactive Streamlit demo
 
 
 
-📂 Project Structure
-multimodal-attribute-extraction/
-│── README.md
-│── requirements.txt
-│── setup.sh
-│
-├── data/                # Datasets
-├── raw/                 # Original datasets
-├── processed/           # Cleaned + aligned data
-│
-├── notebooks/           # Jupyter notebooks for experiments
-│   ├── 01_data_exploration.ipynb
-│   ├── 02_text_baseline.ipynb
-│   ├── 03_image_baseline.ipynb
-│   ├── 04_multimodal_fusion.ipynb
-│   ├── 05_normalization.ipynb
-│   └── 06_evaluation.ipynb
-│
-├── src/                 # Source code
-│   ├── text_model.py    # BERT/DistilBERT model
-│   ├── image_model.py   # CLIP/ViT model
-│   ├── fusion_model.py  # Fusion (concat, MLP head)
-│   ├── train.py         # Training loop
-│   ├── evaluate.py      # Evaluation metrics
-│   └── utils.py         # Helper functions
-│
-├── demo/                # Demo app (Streamlit/Gradio)
-│   └── app.py
-│
-├── results/             # Results + metrics
-│   ├── metrics.json
-│   ├── confusion_matrix.png
-│   └── text_model/      # Saved trained models
-│
-└── docs/                # Extra documentation/slides
-    ├── slides.pdf
-    └── diagrams/
-
 🤝 Contribution
 
 This is a solo project for now, but ideas and suggestions are welcome!
