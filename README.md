@@ -6,6 +6,8 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-green)
 
 
+🚧 **Project Status: Work in Progress** 🚧  
+This project is actively being developed. Current focus: training text models and preparing multimodal fusion. Some components (image pipeline, full demo, evaluation) are still under construction.  
 
 ## 📌 Project Overview
 This project builds a multimodal deep learning pipeline to **extract and normalize product attributes** (brand, color, size, material, category) from both **product text (title + description)** and **images**.
@@ -58,3 +60,79 @@ Model	F1 Score	Normalization Accuracy
 Text-only (BERT)	0.72	81%
 Image-only (ViT)	0.65	76%
 Multimodal Fusion	0.82	89%
+
+
+
+✅ Current Progress
+
+ Text baseline model (BERT / DistilBERT)
+
+ Training loop + evaluation
+
+ Image baseline (CLIP / ViT)
+
+ Multimodal fusion model
+
+ Attribute normalization module
+
+ Streamlit demo integration
+
+📊 Current Results (Text-only Baseline)
+
+F1 Score: 0.72
+
+Normalization Accuracy: 81%
+
+🔮 Next Steps
+
+Train & evaluate image-only baseline
+
+Implement multimodal fusion
+
+Add normalization layer for clean attributes
+
+Build interactive Streamlit demo
+
+
+
+📂 Project Structure
+multimodal-attribute-extraction/
+│── README.md
+│── requirements.txt
+│── setup.sh
+│
+├── data/                # Datasets
+├── raw/                 # Original datasets
+├── processed/           # Cleaned + aligned data
+│
+├── notebooks/           # Jupyter notebooks for experiments
+│   ├── 01_data_exploration.ipynb
+│   ├── 02_text_baseline.ipynb
+│   ├── 03_image_baseline.ipynb
+│   ├── 04_multimodal_fusion.ipynb
+│   ├── 05_normalization.ipynb
+│   └── 06_evaluation.ipynb
+│
+├── src/                 # Source code
+│   ├── text_model.py    # BERT/DistilBERT model
+│   ├── image_model.py   # CLIP/ViT model
+│   ├── fusion_model.py  # Fusion (concat, MLP head)
+│   ├── train.py         # Training loop
+│   ├── evaluate.py      # Evaluation metrics
+│   └── utils.py         # Helper functions
+│
+├── demo/                # Demo app (Streamlit/Gradio)
+│   └── app.py
+│
+├── results/             # Results + metrics
+│   ├── metrics.json
+│   ├── confusion_matrix.png
+│   └── text_model/      # Saved trained models
+│
+└── docs/                # Extra documentation/slides
+    ├── slides.pdf
+    └── diagrams/
+
+🤝 Contribution
+
+This is a solo project for now, but ideas and suggestions are welcome!
